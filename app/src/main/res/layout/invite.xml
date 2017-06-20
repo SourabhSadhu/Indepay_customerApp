@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:id = "@+id/rL1"
+        android:layout_below="@+id/appbar"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="25dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text = "Invite your friends to Indepay"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textColor="#FF0000"
+            android:textStyle="bold|italic"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id = "@+id/rL2"
+        android:layout_below="@+id/rL1"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="25dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text = "Share your referral code"
+            android:gravity="center"
+            android:textSize="15sp" />
+    </RelativeLayout>
+    <android.support.v7.widget.CardView
+        android:id = "@+id/cardViewInviteId"
+        android:layout_below="@+id/rL2"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="50dp"
+        android:elevation="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+            android:id = "@+id/textCouponCodeId"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_height="25dp"
+            android:text = "Inde123"
+            android:paddingStart="10dp"
+            android:textColor="#FF4500"
+            android:paddingTop="1dp"
+            android:paddingBottom="1dp"
+            android:paddingEnd="10dp"
+            android:textStyle="bold|italic"
+            android:layout_centerHorizontal="true"
+            android:background="#00e500"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+        <TextView
+            android:id = "@+id/text1"
+            android:layout_below="@+id/textCouponCodeId"
+            android:layout_width="match_parent"
+            android:layout_marginTop="3dp"
+            android:layout_height="25dp"
+            android:text = "Add your friends to Indepay !"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+        <TextView
+            android:id = "@+id/text2"
+            android:layout_below="@+id/text1"
+            android:layout_width="match_parent"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="10dp"
+            android:layout_height="25dp"
+            android:text = "T and C apply*"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+    <Button
+        android:id = "@+id/invitePhoneContactsBtnId"
+        android:layout_below="@+id/cardViewInviteId"
+        android:layout_width="230dp"
+        android:layout_height="35dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textColor="#ffffff"
+        android:textSize="12sp"
+        android:background="@drawable/button_shape"
+        android:gravity="center"
+        android:text = "Invite phone contacts"/>
+
+
+    <RelativeLayout
+        android:id = "@+id/rL3"
+        android:layout_below="@+id/invitePhoneContactsBtnId"
+        android:layout_width="match_parent"
+        android:layout_marginTop="40dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="30dp"
+            android:background="@drawable/facebook_logo_small_size"
+            android:id ="@+id/imageViewFacebookId"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+        <ImageView
+            android:id ="@+id/imageViewTwitterId"
+            android:layout_toEndOf="@+id/imageViewFacebookId"
+            android:layout_marginStart="46dp"
+            android:background="@drawable/twitter_logo_small_size"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+        <ImageView
+            android:id ="@+id/imageViewWhatsAppId"
+            android:layout_toStartOf="@+id/imageViewShareId"
+            android:layout_marginEnd="45dp"
+            android:background="@drawable/whatsapp_logo_small_size"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+        <ImageView
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/share_logo_small_size"
+            android:id ="@+id/imageViewShareId"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

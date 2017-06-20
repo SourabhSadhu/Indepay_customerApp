@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e4e4e4"
+    android:focusableInTouchMode="true">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+    </android.support.design.widget.AppBarLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/appbar">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id = "@+id/rL3"
+                android:layout_marginTop="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+
+                <EditText
+                    android:id = "@+id/editCardNoId"
+                    android:layout_width="match_parent"
+                    android:inputType="number"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    android:hint = "Enter your card number"
+                    android:background="@drawable/edit_text_shape"
+                    android:gravity="center"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id = "@+id/rL4"
+                android:layout_below="@+id/rL3"
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="45dp">
+
+                <EditText
+                    android:id = "@+id/editNameOfCardHolderId"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/edit_text_shape"
+                    android:hint = "Name of card holder"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    android:gravity="center" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id = "@+id/rL5"
+                android:layout_below="@+id/rL4"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+                <TextView
+                    android:id = "@+id/textExpiryDateCardId"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:text = "Expiry Date"
+                    android:textStyle="bold"
+                    android:layout_marginStart="10dp"
+                    android:textSize="15sp"
+                    android:gravity="center|left"
+                    android:layout_alignParentStart="true"/>
+                <Spinner
+                    android:id = "@+id/spinnerMonthIdId"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_marginStart="20dp"
+                    android:layout_toStartOf="@+id/spinnerYearId"
+                    android:background="@drawable/edit_text_shape"
+                    android:layout_marginEnd="10dp"/>
+                <Spinner
+                    android:id = "@+id/spinnerYearId"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/edit_text_shape"
+                    android:layout_marginEnd="10dp"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id = "@+id/rL6"
+                android:layout_below="@+id/rL5"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:text = "CVV"
+                    android:textStyle="bold"
+                    android:layout_marginStart="10dp"
+                    android:textSize="15sp"
+                    android:gravity="center|start"
+                    android:layout_alignParentStart="true"/>
+                <EditText
+                    android:id = "@+id/editCVVId"
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="10dp"
+                    android:layout_alignParentEnd="true"
+                    android:background="@drawable/edit_text_shape"
+                    android:hint = "CVV/CVV1"
+                    android:gravity="center" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+    <Button
+        android:id ="@+id/addCardBtnId"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:background="@drawable/buttonshape_noround"
+        android:textColor="#ffffff"
+        android:text = "Pay"/>
+
+</RelativeLayout>

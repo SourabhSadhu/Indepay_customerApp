@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e4e4e4"
+    android:focusableInTouchMode="true"
+    tools:context="com.indepay.consumerapp.MyProfile.MyProfile">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+    </android.support.design.widget.AppBarLayout>
+
+
+    <ScrollView
+        android:layout_below="@+id/appbar"
+    android:id = "@+id/scrollViewId"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="45dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id = "@+id/rL2"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="22dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+        <ImageView
+            android:id = "@+id/imageMobNoId"
+            android:layout_width="30dp"
+            android:background="@drawable/mobile"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_alignParentStart="true"/>
+        <EditText
+            android:id = "@+id/countryCodeNoId"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text = "+91"
+            android:focusable="false"
+            android:inputType="number"
+            android:background="@drawable/edit_text_shape"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/imageMobNoId"/>
+        <EditText
+            android:id = "@+id/mobNoId"
+            android:layout_width="245dp"
+            android:layout_height="match_parent"
+            android:hint = "Mobile No."
+            android:gravity="center"
+            android:maxLength="10"
+            android:focusable="false"
+            android:inputType="number"
+            android:background="@drawable/edit_text_shape"
+            android:layout_marginStart="4dp"
+            android:layout_toEndOf="@+id/countryCodeNoId"/>
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id = "@+id/rL3"
+        android:layout_below="@+id/rL2"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <ImageView
+            android:id = "@+id/imagenameId"
+            android:layout_width="30dp"
+            android:background="@drawable/name"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_alignParentStart="true"/>
+        <EditText
+            android:id = "@+id/nameId"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:hint = "Name"
+            android:focusable="false"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/edit_text_shape"
+            android:gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/imagenameId"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id = "@+id/rL4"
+        android:layout_below="@+id/rL3"
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_height="45dp">
+        <ImageView
+            android:id = "@+id/imageAdharId"
+            android:layout_width="30dp"
+            android:background="@drawable/contactcard"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_alignParentStart="true"/>
+        <EditText
+            android:id = "@+id/adharNoId"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/edit_text_shape"
+            android:hint = "Enter your Aadhar Number"
+            android:layout_marginEnd="10dp"
+            android:gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/imageAdharId"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id = "@+id/rL5"
+        android:layout_below="@+id/rL4"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <ImageView
+            android:id = "@+id/imageDOBId"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/calender"
+            android:layout_marginStart="10dp"
+            android:layout_alignParentStart="true"/>
+        <EditText
+            android:id = "@+id/editDobId"
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            android:hint = "Date of Birth"
+            android:focusable="false"
+            android:gravity="center"
+            android:background="@drawable/edit_text_shape"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/imageDOBId"/>
+        <ImageView
+            android:id = "@+id/imageGenderId"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/gender"
+            android:layout_toStartOf="@+id/spinnerGenderId"/>
+        <Spinner
+            android:id = "@+id/spinnerGenderId"
+            android:layout_width="110dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:background="@drawable/spinner_shape"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+           android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id = "@+id/rL6"
+        android:layout_below="@+id/rL5"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <ImageView
+            android:id = "@+id/imageEmailId"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/email"
+            android:layout_marginStart="10dp"
+            android:layout_alignParentStart="true"/>
+        <EditText
+            android:id = "@+id/emailId"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:focusableInTouchMode="true"
+            android:layout_marginEnd="10dp"
+            android:fitsSystemWindows="true"
+            android:windowSoftInputMode="stateVisible|adjustResize"
+            android:background="@drawable/edit_text_shape"
+            android:hint = "Enter Email Address"
+            android:gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/imageEmailId"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id = "@+id/rL7"
+        android:layout_below="@+id/rL6"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text = "Please Enter 4 Digits Pin"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:textSize="17sp"
+            android:layout_marginStart="10dp" />
+
+    </RelativeLayout>
+        <RelativeLayout
+            android:id = "@+id/rL9"
+            android:layout_below="@+id/rL7"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <Button
+                android:id = "@+id/setBtnId"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:text = "ENTER"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:background="@drawable/buttonshape_noround"
+                android:textColor="#ffffff"
+                android:layout_marginStart="20dp"/>
+
+        </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id = "@+id/rL8"
+        android:layout_below="@+id/rL9"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <ImageView
+            android:id = "@+id/imagecurrentAddressId"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/marker"
+            android:layout_marginStart="10dp"
+            android:layout_alignParentStart="true"/>
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:text = "Current Address"
+            android:gravity="center|left"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/imagecurrentAddressId"/>
+        <Button
+            android:id = "@+id/currentAddressAddBtn"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:text = "Add"
+            android:layout_marginTop="2.5dp"
+            android:background="@drawable/button_add_shape"
+            android:layout_marginEnd="10dp"
+            android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:id = "@+id/rL10"
+            android:layout_below="@+id/rL8"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+            <ImageView
+                android:id = "@+id/imagebankdetailsId"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bankcards"
+                android:layout_marginStart="10dp"
+                android:layout_alignParentStart="true"/>
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:text = "Bank Details"
+                android:gravity="center|left"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@+id/imagebankdetailsId"/>
+            <Button
+                android:id = "@+id/BankDetailsAddBtn"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:text = "Add"
+                android:layout_marginTop="2.5dp"
+                android:background="@drawable/button_add_shape"
+                android:layout_marginEnd="10dp"
+                android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>
+<Button
+    android:id = "@+id/updateDetailsBtnId"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+    android:textSize="16sp"
+    android:textStyle="bold"
+    android:background="@drawable/buttonshape_noround"
+    android:textColor="#ffffff"
+    android:text = "UPDATE DETAILS"/>
+</RelativeLayout>
+
+<!--<RelativeLayout-->
+<!--android:id = "@+id/rL7"-->
+<!--android:layout_below="@+id/rL6"-->
+<!--android:layout_marginTop="15dp"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="45dp">-->
+<!--<ImageView-->
+    <!--android:id = "@+id/imageBankAccountDetailsId"-->
+    <!--android:layout_width="30dp"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:layout_height="30dp"-->
+    <!--android:background="@drawable/accounting"-->
+    <!--android:layout_marginStart="10dp"-->
+    <!--android:layout_alignParentStart="true"/>-->
+<!--<TextView-->
+    <!--android:layout_width="200dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:text = "Bank Account Details"-->
+    <!--android:gravity="center|left"-->
+    <!--android:textStyle="bold"-->
+    <!--android:textSize="17sp"-->
+    <!--android:layout_marginStart="10dp"-->
+    <!--android:layout_toEndOf="@+id/imageBankAccountDetailsId"/>-->
+<!--<Button-->
+    <!--android:id = "@+id/bankDetailAddBtn"-->
+    <!--android:layout_width="80dp"-->
+    <!--android:layout_height="40dp"-->
+    <!--android:text = "Add"-->
+    <!--android:layout_marginTop="2.5dp"-->
+    <!--android:background="@drawable/button_add_shape"-->
+    <!--android:layout_marginEnd="10dp"-->
+    <!--android:layout_alignParentEnd="true"/>-->
+<!--</RelativeLayout>-->

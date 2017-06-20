@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e4e4e4"
+    android:focusableInTouchMode="true"
+    tools:context="com.indepay.consumerapp.MoneyTransactions.sendMoney.SendMoney">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id = "@+id/rL3"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="100dp"
+            android:background="#ffffff"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:id = "@+id/imagenameId"
+                android:layout_width="30dp"
+                android:background="@drawable/forword"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_alignParentStart="true" />
+            <TextView
+                android:id = "@+id/nameId"
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:hint = "Rate Us in App Store"
+                android:focusable="false"
+                android:layout_marginEnd="10dp"
+                android:gravity="center|left"
+                android:textSize="14sp"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@+id/imagenameId"/>
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/forward_direction"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id = "@+id/rL4"
+            android:layout_below="@+id/rL3"
+            android:layout_width="match_parent"
+            android:background="#ffffff"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_height="50dp">
+            <ImageView
+                android:id = "@+id/imageAdharId"
+                android:layout_width="30dp"
+                android:background="@drawable/forword"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_alignParentStart="true"/>
+            <TextView
+                android:id = "@+id/adharNoId"
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:textSize="14sp"
+                android:hint = "Like Us on Facebook"
+                android:layout_marginEnd="10dp"
+                android:gravity="center|left"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@+id/imageAdharId"/>
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/forward_direction"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id = "@+id/rL6"
+            android:layout_below="@+id/rL4"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <ImageView
+                android:id = "@+id/imageEmailId"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/forword"
+                android:layout_marginStart="10dp"
+                android:layout_alignParentStart="true"/>
+            <TextView
+                android:id = "@+id/emailId"
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:focusableInTouchMode="true"
+                android:layout_marginEnd="10dp"
+                android:textSize="14sp"
+                android:fitsSystemWindows="true"
+                android:windowSoftInputMode="stateVisible|adjustResize"
+                android:hint = "Follow on Twitter"
+                android:gravity="center|left"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@+id/imageEmailId"/>
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/forward_direction"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_alignParentEnd="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id = "@+id/rL7"
+            android:layout_below="@+id/rL6"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <ImageView
+                android:id = "@+id/imageLegalId"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/forword"
+                android:layout_marginStart="10dp"
+                android:layout_alignParentStart="true"/>
+            <TextView
+                android:id = "@+id/textLegalId"
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:focusableInTouchMode="true"
+                android:layout_marginEnd="10dp"
+                android:textSize="14sp"
+                android:fitsSystemWindows="true"
+                android:windowSoftInputMode="stateVisible|adjustResize"
+                android:hint = "Legal"
+                android:gravity="center|left"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@+id/imageLegalId"/>
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/forward_direction"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_alignParentEnd="true"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>
+

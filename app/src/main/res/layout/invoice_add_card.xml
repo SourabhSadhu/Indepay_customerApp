@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+    </android.support.design.widget.AppBarLayout>
+
+    <ImageView
+        android:layout_below="@+id/appbar"
+        android:id = "@+id/imageViewId"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:foregroundGravity="center"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/invoice1" />
+
+    <android.support.v7.widget.CardView
+        android:layout_below="@+id/imageViewId"
+        android:layout_width="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:elevation="6dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="#ffffff"
+            android:layout_height="match_parent">
+      <RelativeLayout
+          android:id = "@+id/rL1"
+          android:layout_alignParentTop="true"
+          android:layout_width="match_parent"
+          android:layout_height="30dp">
+        <TextView
+            android:id = "@+id/textTransactionId"
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            android:gravity="center|start"
+            android:layout_alignParentStart="true"
+            android:textStyle="bold"
+            android:text = "Transaction Id"
+            android:layout_marginStart="10dp"
+            android:textSize="14sp"/>
+        <TextView
+            android:id = "@+id/editTransactionId"
+            android:layout_width="wrap_content"
+            android:layout_toEndOf="@+id/textTransactionId"
+            android:layout_height="match_parent"
+            android:gravity="center|start"
+            android:text = "546546541"
+            android:textStyle="bold"
+            android:layout_marginStart="30dp"
+            android:textSize="14sp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id = "@+id/rL2"
+        android:layout_below="@+id/rL1"
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+
+        <TextView
+            android:id = "@+id/textDateandTimeId"
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            android:gravity="center|start"
+            android:layout_alignParentStart="true"
+            android:textStyle="bold"
+            android:text = "Date and Time"
+            android:layout_marginStart="10dp"
+            android:textSize="14sp"/>
+        <TextView
+            android:id = "@+id/editDateandTimeId"
+            android:layout_width="wrap_content"
+            android:layout_toEndOf="@+id/textDateandTimeId"
+            android:layout_height="match_parent"
+            android:gravity="center|start"
+            android:textStyle="bold"
+            android:text = "29th April,2017"
+            android:layout_marginStart="30dp"
+            android:textSize="14sp"/>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id = "@+id/rL3"
+        android:layout_below="@+id/rL2"
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+
+        <TextView
+            android:id = "@+id/textDateandTimeOperatorId"
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            android:gravity="center|start"
+            android:layout_alignParentStart="true"
+            android:textStyle="bold"
+            android:text = "Operator"
+            android:layout_marginStart="10dp"
+            android:textSize="14sp"/>
+        <TextView
+            android:id = "@+id/editDateandTimeOperatorId"
+            android:layout_width="wrap_content"
+            android:layout_toEndOf="@+id/textDateandTimeOperatorId"
+            android:layout_height="match_parent"
+            android:gravity="center|start"
+            android:text = "Indepay"
+            android:textStyle="bold"
+            android:layout_marginStart="30dp"
+            android:textSize="14sp"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id = "@+id/rL4"
+        android:layout_below="@+id/rL3"
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+
+        <TextView
+            android:id = "@+id/textTransactionAmountId"
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            android:gravity="center|start"
+            android:layout_alignParentStart="true"
+            android:textStyle="bold"
+            android:text = "Transaction Amount"
+            android:layout_marginStart="10dp"
+            android:textSize="14sp"/>
+        <TextView
+            android:id = "@+id/editTransactionAmountId"
+            android:layout_width="wrap_content"
+            android:layout_toEndOf="@+id/textTransactionAmountId"
+            android:layout_height="match_parent"
+            android:gravity="center|start"
+            android:textStyle="bold"
+            android:text = "2536"
+            android:layout_marginStart="30dp"
+            android:textSize="14sp"/>
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id = "@+id/rL5"
+        android:layout_below="@+id/rL4"
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+
+        <TextView
+            android:id = "@+id/textStatusId"
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            android:gravity="center|start"
+            android:layout_alignParentStart="true"
+            android:textStyle="bold"
+            android:text = "Status"
+            android:layout_marginStart="10dp"
+            android:textSize="14sp"/>
+        <TextView
+            android:id = "@+id/editStatusId"
+            android:layout_width="wrap_content"
+            android:layout_toEndOf="@+id/textStatusId"
+            android:layout_height="match_parent"
+            android:gravity="center|start"
+            android:textStyle="bold"
+            android:text = "Successful"
+            android:layout_marginStart="30dp"
+            android:textSize="14sp"/>
+
+
+    </RelativeLayout>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

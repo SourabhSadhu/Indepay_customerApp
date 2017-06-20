@@ -1,0 +1,39 @@
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+
+
+
+            <item
+                android:id="@+id/sendMoneyId"
+                android:orderInCategory="3"
+                android:checked="true"
+                android:showAsAction="always"
+                android:title="Send Money" />
+
+            <item
+                android:id="@+id/recieveMoneyId"
+                android:orderInCategory="4"
+                android:showAsAction="never"
+                android:title="Recieve Money" />
+
+    <item
+        android:id="@+id/mobileTopUpId"
+        android:orderInCategory="5"
+        android:showAsAction="never"
+        android:title="Mobile Top Up" />
+    <item
+        android:id="@+id/cashDepositId"
+        android:orderInCategory="1"
+        android:showAsAction="never"
+        android:title="Cash Deposit" />
+    <item
+        android:id="@+id/cashDeliveryId"
+        android:orderInCategory="2"
+        android:showAsAction="never"
+        android:title="Cash Delivery" />
+
+
+
+
+</menu>

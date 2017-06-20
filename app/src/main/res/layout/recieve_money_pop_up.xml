@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e4e4e4">
+
+
+    <RelativeLayout
+        android:id = "@+id/rLTop"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:id = "@+id/titleId"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="18sp"
+            android:text="Success"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:textColor="#253f3f"
+            android:gravity="center"/>
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id = "@+id/rL2"
+        android:layout_below="@+id/rLTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:id = "@+id/editSuccessMsgId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text= "Your request has been successfully created and sent to 7530946909."
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:textColor="#696969"
+            android:gravity="center"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id = "@+id/rL3"
+        android:layout_below="@+id/rL2"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="25dp">
+        <Button
+            android:id = "@+id/okBtnId"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/buttonshape_noround"
+            android:text = "OK"
+            android:textStyle="bold"
+            android:layout_alignParentBottom="true"
+            android:textSize="14sp"
+            android:textColor="#ffffff"
+            android:gravity="center"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

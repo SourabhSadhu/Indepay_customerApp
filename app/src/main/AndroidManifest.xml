@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.indepay.consumerapp">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/app_launch_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+
+        <!-- The API key for Google Maps-based APIs is defined as a string resource. (See the file "res/values/google_maps_api.xml"). Note that the API key is linked to the encryption key used to sign the APK. You need a different API key for each encryption key, including the release key that is used to sign the APK for publishing. You can define the keys for the debug and release targets in src/debug/ and src/release/. -->
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity android:name=".Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoginProcess.VerifyMobileNo" />
+        <activity android:name=".LoginProcess.ForgotPassword" />
+        <activity android:name=".LoginProcess.WelcomeBack" />
+        <activity android:name=".LoginProcess.Welcome" />
+        <activity android:name=".LoginProcess.PickUpLocation" />
+        <activity android:name=".Payment.Payment" />
+        <activity android:name=".MoneyTransactions.mobileTopUp.InvoiceMobileTopUp" />
+        <activity android:name=".ContactUs" />
+        <activity android:name=".LoginProcess.ChangePin" />
+        <activity android:name=".MyProfile.MyProfile" />
+        <activity android:name=".MyProfile.CurrentAddress" />
+        <activity android:name=".MyProfile.BankAccountDetail" />
+        <activity android:name=".MoneyTransactions.sendMoney.SendMoney" />
+        <activity android:name=".MoneyTransactions.recieveMoney.RecieveMoney" />
+        <activity android:name=".MoneyTransactions.mobileTopUp.MobileTopUp" />
+        <activity android:name=".MoneyTransactions.cashDeposit.CashDeposit" />
+        <activity android:name=".MoneyTransactions.cashDelivery.CashDelivery" />
+        <activity android:name=".MoneyTransactions.cashDeposit.CashPickUpTracking" />
+        <activity android:name=".MoneyTransactions.cashDelivery.CashDeliveryTracking" />
+        <activity android:name=".MoneyTransactions.mobileTopUp.BrowsePlans" />
+        <activity android:name=".MoneyTransactions.sendMoney.SendMoneyToVPA" />
+        <activity android:name=".MoneyTransactions.sendMoney.SendMoneyToAccountNumber" />
+        <activity android:name=".MoneyTransactions.sendMoney.SendMoneyToMobileNumber" />
+        <activity android:name=".MoneyTransactions.sendMoney.InvoiceSendMoney" />
+        <activity android:name=".MoneyTransactions.sendMoney.AddPayee" />
+        <activity android:name=".MoneyTransactions.sendMoney.OTPConfirmation" />
+        <activity android:name=".MyTransactions.MyTransactions" />
+        <activity android:name=".MyAgents.MyAgents" />
+        <activity android:name=".MyAgents.AddAgent" />
+        <activity android:name=".Notification.LiveNotification" />
+        <activity android:name=".savedCards.SavedCards" />
+        <activity android:name=".savedCards.AddCard" />
+        <activity android:name=".savedCards.InvoiceAddCard" />
+        <activity android:name=".Settings.Settings" />
+        <activity android:name=".Settings.FAQAndContact" />
+        <activity android:name=".Settings.ChangePinSettings" />
+        <activity android:name=".Settings.SecuritySettings" />
+        <activity android:name=".MyBeneficiaries.MyBeneficiaries" />
+        <activity android:name=".Invite" />
+        <activity android:name=".HomeActivity"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Indepay</string>
+    <string name="i_accept_indepay_terms_and_conditions">I accept Indepay <u>Terms and Conditions</u></string>
+    <string name="add_payee"><u>Add Payee</u></string>
+    <string name="browse_plans"><u>Browse Plans</u></string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+</resources>

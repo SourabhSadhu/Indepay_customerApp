@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/myTransactionsId"
+            android:title="My Transactions"
+            android:icon="@drawable/name"/>
+        <item
+            android:id="@+id/myBeneficiariesId"
+            android:title="My Beneficiaries"
+            android:icon="@drawable/name"/>
+        <item
+            android:id="@+id/notificationsId"
+            android:title="Notifications"
+            android:icon="@drawable/name"/>
+        <item
+            android:id="@+id/myFavouriteAgent"
+            android:title="My Favourite Agent"
+            android:icon="@drawable/name"/>
+        <item
+            android:id="@+id/inviteId"
+            android:title="Invite"
+            android:icon="@drawable/name"/>
+        <item
+            android:id="@+id/settingsId"
+            android:title="Settings"
+            android:icon="@drawable/name"/>
+        <item
+            android:id="@+id/aboutId"
+            android:title="About"
+            android:icon="@drawable/name"/>
+        <item
+            android:id="@+id/logoutId"
+            android:title="Logout"
+            android:icon="@drawable/name"/>
+
+    </group>
+</menu>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+    </android.support.design.widget.AppBarLayout>
+
+
+    <RelativeLayout
+        android:layout_below="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="18dp">
+        <RelativeLayout
+            android:id = "@+id/rL2"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="15dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true">
+
+            <Spinner
+                android:id = "@+id/spinnerCountryCodeId"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="15dp"
+                android:gravity="center"
+                android:background="@drawable/spinner_shape"
+                android:layout_marginStart="15dp" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id = "@+id/rL3"
+            android:layout_below="@+id/rL2"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+
+            <EditText
+                android:id = "@+id/nameCardHolderId"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint = "Mobile Number"
+                android:layout_marginEnd="15dp"
+                android:maxLength="10"
+                android:inputType="number"
+                android:background="@drawable/edit_text_shape"
+                android:gravity="center"
+                android:layout_marginStart="15dp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id = "@+id/rL4"
+            android:layout_below="@+id/rL3"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+
+            <EditText
+                android:id = "@+id/editOTPId"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint = "Set new 4 digit PIN"
+                android:layout_marginEnd="15dp"
+                android:maxLength="10"
+                android:inputType="number"
+                android:background="@drawable/edit_text_shape"
+                android:gravity="center"
+                android:layout_marginStart="15dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id = "@+id/rL5"
+            android:layout_below="@+id/rL4"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+
+            <EditText
+                android:id = "@+id/editConfirmPinId"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint = "Confirm PIN"
+                android:layout_marginEnd="15dp"
+                android:maxLength="10"
+                android:inputType="number"
+                android:background="@drawable/edit_text_shape"
+                android:gravity="center"
+                android:layout_marginStart="15dp" />
+        </RelativeLayout>
+
+      </RelativeLayout>
+
+    <Button
+        android:id = "@+id/verifyChangePinActivityBtnId"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="14sp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:textStyle="bold"
+        android:background="@drawable/buttonshape_noround"
+        android:textColor="#ffffff"
+        android:text = "LOGIN"
+        android:layout_marginBottom="40dp"/>
+</RelativeLayout>
